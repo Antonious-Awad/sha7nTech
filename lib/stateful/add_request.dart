@@ -17,7 +17,6 @@ class _addRequestState extends State<addRequest> {
     return Scaffold(
       backgroundColor: AppColor.white,
       appBar: AppBar(
-        centerTitle: true,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -27,15 +26,9 @@ class _addRequestState extends State<addRequest> {
             Navigator.pop(context);
           },
         ),
-        backgroundColor: AppColor.white,
-        elevation: 0,
         title: Text(
           AppLocalization.of(context)!.translate('add_request').toString(),
-          style: TextStyle(
-              fontFamily: "Careem",
-              fontWeight: FontWeight.bold,
-              fontSize: 25,
-              color: AppColor.black),
+          style: Theme.of(context).appBarTheme.titleTextStyle,
         ),
       ),
       body: Padding(

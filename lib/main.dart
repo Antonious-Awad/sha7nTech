@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:sha7n_tech/appLocalization.dart';
+import 'package:sha7n_tech/colors.dart';
 import 'package:sha7n_tech/stateful/add_request.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -28,11 +29,25 @@ class MyApp extends StatelessWidget {
         localeResolutionCallback: (locale, supportedLocales) {
           for (var supportedLocale in supportedLocales) {
             if (supportedLocale.languageCode == locale!.languageCode &&
-                supportedLocale.countryCode  == locale.countryCode )
+                supportedLocale.countryCode == locale.countryCode)
               return supportedLocale;
           }
-              return supportedLocales.first;
+          return supportedLocales.first;
         },
+        theme: ThemeData(
+          fontFamily: "Careem",
+          appBarTheme: AppBarTheme(
+            centerTitle: true,
+            backgroundColor: AppColor.white,
+            elevation: 0,
+            titleTextStyle: TextStyle(
+                fontFamily: "Careem",
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                color: AppColor.black
+                ),
+          ),
+        ),
       );
     });
   }
