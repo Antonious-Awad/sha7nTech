@@ -138,9 +138,7 @@ class _addRequestState extends State<addRequest> {
               Container(
                 width: 263,
                 height: 50,
-                margin: EdgeInsetsDirectional.only(
-                  bottom: 20 
-                ),
+                margin: EdgeInsetsDirectional.only(bottom: 20),
                 child: MaterialButton(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(5.0))),
