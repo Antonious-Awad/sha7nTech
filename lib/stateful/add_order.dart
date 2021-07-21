@@ -11,14 +11,7 @@ class AddOrder extends StatefulWidget {
 class _AddOrderState extends State<AddOrder> {
   @override
   Widget build(BuildContext context) {
-    return Sizer(
-      builder: (context, orientation, deviceType) {
-        return MaterialApp(
-          localizationsDelegates: context.localizationDelegates,
-          supportedLocales: context.supportedLocales,
-          locale: context.locale,
-          debugShowCheckedModeBanner: false,
-          home: Scaffold(
+        return Scaffold(
             backgroundColor: Colors.white,
             appBar: AppBar(
               leading: IconButton(
@@ -230,10 +223,9 @@ class _AddOrderState extends State<AddOrder> {
                 ],
               ),
             ),
-          ),
-        );
-      },
-    );
+          );
+      
+    
   }
 }
 
