@@ -236,7 +236,13 @@
   "receiver_name":"Receiver's name",
   "receiver_phone":"Receiver's Phone",
   "request_cost":"Request cost",
-  "receiver": "I'm the receiver"
-
-
+  "receiver": "I'm the receiver",
+  "transformation_type": "transformation type",
+  "phone_num": "phone number",
+  "transport_type": "transport type",
+  "Transport_weight": "Transport weight",
+  "fr_om": "from",
+  "t_o": "to",
+  "distance": "distance",
+  "cont_inue": "continue"
 }

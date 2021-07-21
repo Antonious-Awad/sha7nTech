@@ -236,6 +236,13 @@
   "receiver_phone":"هاتف المستلم",
   "request_cost":"تكلفه الطلب",
   "continue": "استمرار",
-  "receiver": "انا المتلقي"
-
+  "receiver": "انا المتلقي",
+  "transformation_type": "نوع التحويل",
+  "phone_num": "رقم الهاتف",
+  "transport_type": "نوع الحمولة",
+  "Transport_weight": "وزن الحمولة",
+  "fr_om": "من",
+  "t_o": "الى",
+  "distance": "المسافة",
+  "cont_inue": "متابعة"
 }
