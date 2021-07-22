@@ -38,11 +38,11 @@ class _AddOrderState extends State<AddOrder> {
                         height: 9.8.h,
                         child: GestureDetector(
                             onTap: (){},
-                            child: Image.asset('assets/image.jpg'))),
+                            child: Image.asset('assets/images/image.jpg'))),
                   ),
                   SizedBox(height: .4.h,),
                   Center(
-                    child: Text("إضافة صورة",
+                    child: Text(AppLocalization.of(context)!.translate("add_image").toString(),
                       style: TextStyle(
                         color: Color.fromRGBO(128, 114, 114, 1),
                         fontSize: 16,
@@ -51,8 +51,9 @@ class _AddOrderState extends State<AddOrder> {
                   ),
                   SizedBox(height: 2.5.h,),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 66.2.w,),
+                      SizedBox(width: 7.w,),
                       Text(AppLocalization.of(context)!.translate("transformation_type").toString(),
                         style: TextStyle(
                           color: Color.fromRGBO(251, 152, 0, 1),
@@ -65,8 +66,9 @@ class _AddOrderState extends State<AddOrder> {
                   textField(),
                   SizedBox(height: 1.1.h,),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 68.4.w,),
+                      SizedBox(width: 7.w,),
                       Text(
                         AppLocalization.of(context)!.translate("phone_num").toString(),
                         style: TextStyle(
@@ -80,8 +82,9 @@ class _AddOrderState extends State<AddOrder> {
                   textField(),
                   SizedBox(height: 1.1.h,),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 64.5.w,),
+                      SizedBox(width: 7.w,),
                       Text(AppLocalization.of(context)!.translate("transport_type").toString(),
                         style: TextStyle(
                             color: Color.fromRGBO(251, 152, 0, 1),
@@ -94,8 +97,9 @@ class _AddOrderState extends State<AddOrder> {
                   textField(),
                   SizedBox(height: 1.3.h,),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 64.6.w,),
+                      SizedBox(width: 7.w,),
                       Text(AppLocalization.of(context)!.translate("Transport_weight").toString(),
                         style: TextStyle(
                             color: Color.fromRGBO(251, 152, 0, 1),
@@ -108,27 +112,28 @@ class _AddOrderState extends State<AddOrder> {
                   textField(),
                   SizedBox(height: 2.6.h,),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 41.w,),
-                      Text(AppLocalization.of(context)!.translate("t_o").toString(),
-                        style: TextStyle(
-                          color: Color.fromRGBO(251, 152, 0, 1),
-                          fontSize: 20.0,
-                          fontFamily: 'CareemRegular',
-                        ),),
-                      SizedBox(width: 2.w,),
-                      Icon(
-                        Icons.location_on,
-                        color: Color.fromRGBO(251, 152, 0, 1),
-                      ),
-                      SizedBox(width: 18.8.w,),
+                      SizedBox(width: 7.w,),
                       Text(AppLocalization.of(context)!.translate("fr_om").toString(),
                         style: TextStyle(
                           color: Color.fromRGBO(251, 152, 0, 1),
                           fontSize: 20.0,
                           fontFamily: 'CareemRegular',
                         ),),
-                      SizedBox(width: 2.08.w,),
+                      SizedBox(width: 1.5.w,),
+                      Icon(
+                        Icons.location_on,
+                        color: Color.fromRGBO(251, 152, 0, 1),
+                      ),
+                      SizedBox(width: 15.w,),
+                      Text(AppLocalization.of(context)!.translate("t_o").toString(),
+                        style: TextStyle(
+                          color: Color.fromRGBO(251, 152, 0, 1),
+                          fontSize: 20.0,
+                          fontFamily: 'CareemRegular',
+                        ),),
+                      SizedBox(width: 1.5.w,),
                       Icon(
                         Icons.location_on,
                         color: Color.fromRGBO(251, 152, 0, 1),
@@ -138,7 +143,7 @@ class _AddOrderState extends State<AddOrder> {
                   SizedBox(height: 1.1.h,),
                   Row(
                     children: [
-                      SizedBox(width: 25.8.w,),
+                      SizedBox(width: 7.w,),
                       Container(
                         width: 30.4.w,
                         height: 5.4.h,
@@ -179,9 +184,18 @@ class _AddOrderState extends State<AddOrder> {
                     ],
                   ),
                   SizedBox(height: 3.5.h),
-                  Row(children: [
-                    SizedBox(width: 25.3.w,),
-                    Container(
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    SizedBox(width: 7.w,),
+                      Text(AppLocalization.of(context)!.translate("distance").toString(),
+                        style: TextStyle(
+                          color: Color.fromRGBO(251, 152, 0, 1),
+                          fontSize: 20.0,
+                          fontFamily: 'CareemRegular',
+                        ),),
+                      SizedBox(width: 7.3.w,),
+                      Container(
                       color: Color.fromRGBO(251, 152, 0, 1),
                       width: 36.3.w,
                       height: 4.5.h,
@@ -197,13 +211,6 @@ class _AddOrderState extends State<AddOrder> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 7.3.w,),
-                    Text(AppLocalization.of(context)!.translate("distance").toString(),
-                      style: TextStyle(
-                        color: Color.fromRGBO(251, 152, 0, 1),
-                        fontSize: 20.0,
-                        fontFamily: 'CareemRegular',
-                      ),),
                   ],),
                   SizedBox(height: 4.h,),
                   Container(
