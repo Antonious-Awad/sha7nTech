@@ -9,9 +9,9 @@
   "sign_in": "تسجيل الدخول",
   "phone_number_hint": "رقم الجوال",
   "password_hint": "كلمة المرور",
-  "forgot_password": "نسيت كلمة المرور؟",
+  "forgot_password": "نسيت كلمة المرور",
   "other_ways": "استخدام طرق اخري للدخول",
-  "don't_have_account": "ليس لديك حساب؟",
+  "don't_have_account": "ليس لديك حساب؟إنشاء حساب",
   "register_new_account": "تسجيل حساب جديد",
   "name_hint": "الاسم",
   "email_hint": "الايميل",
@@ -245,5 +245,7 @@
   "t_o": "الى",
   "distance": "المسافة",
   "cont_inue": "متابعة",
-  "add_image": "إضافة صورة"
+  "add_image": "إضافة صورة",
+  "remember": "تذكرني",
+  "login": "دخول"
 }
