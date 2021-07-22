@@ -51,6 +51,7 @@ class _AddOrderState extends State<AddOrder> {
                         color: Color.fromRGBO(128, 114, 114, 1),
                         fontSize: 16,
                         fontFamily: 'Careem',
+                        decoration: TextDecoration.none,
                       ),),
                   ),
                   SizedBox(height: 2.5.h,),
@@ -63,6 +64,7 @@ class _AddOrderState extends State<AddOrder> {
                           color: Color.fromRGBO(251, 152, 0, 1),
                           fontSize: 20.0,
                           fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                     ],
                   ),
@@ -79,6 +81,7 @@ class _AddOrderState extends State<AddOrder> {
                           color: Color.fromRGBO(251, 152, 0, 1),
                           fontSize: 20.0,
                           fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                     ],
                   ),
@@ -93,7 +96,8 @@ class _AddOrderState extends State<AddOrder> {
                         style: TextStyle(
                             color: Color.fromRGBO(251, 152, 0, 1),
                             fontSize: 20.0,
-                            fontFamily: 'Careem'
+                            fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                     ],
                   ),
@@ -108,7 +112,8 @@ class _AddOrderState extends State<AddOrder> {
                         style: TextStyle(
                             color: Color.fromRGBO(251, 152, 0, 1),
                             fontSize: 20.0,
-                            fontFamily: 'Careem'
+                            fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                     ],
                   ),
@@ -124,6 +129,7 @@ class _AddOrderState extends State<AddOrder> {
                           color: Color.fromRGBO(251, 152, 0, 1),
                           fontSize: 20.0,
                           fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                       SizedBox(width: 1.5.w,),
                       Icon(
@@ -136,6 +142,7 @@ class _AddOrderState extends State<AddOrder> {
                           color: Color.fromRGBO(251, 152, 0, 1),
                           fontSize: 20.0,
                           fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                       SizedBox(width: 1.5.w,),
                       Icon(
@@ -197,6 +204,7 @@ class _AddOrderState extends State<AddOrder> {
                           color: Color.fromRGBO(251, 152, 0, 1),
                           fontSize: 20.0,
                           fontFamily: 'Careem',
+                          decoration: TextDecoration.none,
                         ),),
                       SizedBox(width: 7.3.w,),
                       Container(
