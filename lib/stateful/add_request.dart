@@ -128,27 +128,9 @@ class _addRequestState extends State<addRequest> {
                 height: 3.07.h,
               ),
               //continue button
-              Container(
-                width: 263,
-                height: 50,
-                margin: EdgeInsetsDirectional.only(bottom: 20),
-                child: MaterialButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
-                  onPressed: () {},
-                  color: AppColor.orange.withOpacity(1),
-                  textColor: AppColor.white,
-                  child: Text(
-                    AppLocalization.of(context)!
+              button(buttonText: AppLocalization.of(context)!
                         .translate("continue")
-                        .toString(),
-                    style: TextStyle(
-                        fontFamily: "Careem",
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-              )
+                        .toString())
             ],
           ),
         ),
