@@ -28,6 +28,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_translate: ^3.0.1
   sizer: ^2.0.13
+  flutter_verification_code: ^1.0.4
 
 dev_dependencies:
   flutter_test:

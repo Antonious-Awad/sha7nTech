@@ -247,5 +247,9 @@
   "cont_inue": "متابعة",
   "add_image": "إضافة صورة",
   "remember": "تذكرني",
-  "login": "دخول"
+  "login": "دخول",
+  "activation_code" : "كود التفعيل",
+  "enter_code" : "ادخل كود التفعيل",
+  "resend_code" : "إعادة إرسال الكود",
+  "enter_" : "إدخال"
 }

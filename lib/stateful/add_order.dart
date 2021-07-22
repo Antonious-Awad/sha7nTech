@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sha7n_tech/appLocalization.dart';
+import 'package:sha7n_tech/colors.dart';
 import 'package:sizer/sizer.dart';
-import 'package:easy_localization/easy_localization.dart';
+//import 'package:easy_localization/easy_localization.dart';
 
 class AddOrder extends StatefulWidget {
   @override
@@ -19,11 +20,11 @@ class _AddOrderState extends State<AddOrder> {
                 onPressed: (){},
               ),
               elevation: 0.0,
-              backgroundColor: Colors.white,
+              backgroundColor: AppColor.white,
               centerTitle: true,
               title: Text("إضافة طلب",
                 style: TextStyle(
-                  color: Colors.black,
+                  color: AppColor.black,
                   fontSize: 22.0,
                   fontFamily:'Careem',
                 ),),

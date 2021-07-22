@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:sha7n_tech/appLocalization.dart';
 import 'package:sha7n_tech/colors.dart';
-import 'package:sha7n_tech/stateful/add_request.dart';
-import 'package:sha7n_tech/stateful/login.dart';
+import 'package:sha7n_tech/stateful/activation_code.dart';
+//import 'package:sha7n_tech/stateful/add_request.dart';
+//import 'package:sha7n_tech/stateful/login.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'stateful/add_order.dart';
+//import 'stateful/add_order.dart';
 
 LocalizationDelegate? delegate;
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return Sizer(builder: (context, orientation, deviceType) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Login(),
+        home: ActivationCode(),
         supportedLocales: [Locale('en', 'US'), Locale('ar', 'EG')],
         localizationsDelegates: [
           AppLocalization.delegate,

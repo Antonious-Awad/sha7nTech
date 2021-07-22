@@ -247,5 +247,9 @@
   "cont_inue": "Continue",
   "add_image": "Add Photo",
   "remember":"Remember me",
-  "login": "Login"
+  "login": "Login",
+  "activation_code" : "Activation Code",
+  "enter_code" : "Enter Activation Code",
+  "resend_code" : "Resend The Code",
+  "enter_" : "Enter"
 }
