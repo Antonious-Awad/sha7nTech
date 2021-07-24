@@ -6,6 +6,7 @@ import 'package:sha7n_tech/stateful/activation_code.dart';
 import 'package:sha7n_tech/stateful/add_order.dart';
 import 'package:sha7n_tech/stateful/add_request.dart';
 import 'package:sha7n_tech/stateful/login.dart';
+import 'package:sha7n_tech/stateless/AboutApp.dart';
 import 'package:sha7n_tech/stateless/orderMenu.dart';
 //import 'package:sha7n_tech/stateful/add_request.dart';
 //import 'package:sha7n_tech/stateful/login.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
     return Sizer(builder: (context, orientation, deviceType) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: orderMenu(),
+        home: AboutApp(),
         supportedLocales: [Locale('en', 'US'), Locale('ar', 'EG')],
         localizationsDelegates: [
           AppLocalization.delegate,
