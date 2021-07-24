@@ -251,5 +251,7 @@
   "activation_code" : "Activation Code",
   "enter_code" : "Enter Activation Code",
   "resend_code" : "Resend The Code",
-  "enter_" : "Enter"
+  "enter_" : "Enter",
+  "transport_goods": "Transport goods",
+  "refrigerator_carts": "Refrigerator truck"
 }
