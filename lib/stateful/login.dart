@@ -11,6 +11,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  bool checkbox = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +38,8 @@ class _LoginState extends State<Login> {
               SizedBox(
                 height: 3.32.h,
               ),
-              defaultTFF(keyboard: TextInputType.visiblePassword, password: true),
+              defaultTFF(
+                  keyboard: TextInputType.visiblePassword, password: true),
               SizedBox(
                 height: 4.5.h,
               ),
@@ -51,23 +53,30 @@ class _LoginState extends State<Login> {
                       child: Padding(
                         padding: const EdgeInsetsDirectional.only(start: 10),
                         child: Text(
-                          AppLocalization.of(context)!
-                              .translate("forgot_password")
-                              .toString(),
-                          style: TextStyle(
-                            color: AppColor.black,
-                            decoration: TextDecoration.underline,
-                            fontFamily: "Careem",
-                            fontSize: 15,
-                          ),
-                        ),
+                            AppLocalization.of(context)!
+                                .translate("forgot_password")
+                                .toString(),
+                            style: Theme.of(context).textTheme.bodyText2),
                       )),
                   SizedBox(
                     width: 14.w,
                   ),
-                  Checkbox(value: false, onChanged: (value) {}),
+                  Checkbox(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    value: checkbox,
+                    onChanged: (value) {
+                      setState(() {
+                        checkbox = value!;
+                      });
+                    },
+                    activeColor: AppColor.orange,
+                    checkColor: AppColor.orange,
+                  ),
                   Text(
-                    AppLocalization.of(context)!.translate("remember").toString(),
+                    AppLocalization.of(context)!
+                        .translate("remember")
+                        .toString(),
                     style: Theme.of(context).textTheme.bodyText1,
                   ),
                 ],
@@ -87,8 +96,9 @@ class _LoginState extends State<Login> {
                 height: 9.6.h,
               ),
               button(
-                  buttonText:
-                      AppLocalization.of(context)!.translate("login").toString())
+                  buttonText: AppLocalization.of(context)!
+                      .translate("login")
+                      .toString())
             ],
           ),
         ),

@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return Sizer(builder: (context, orientation, deviceType) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: AddOrder(),
+        home: ActivationCode(),
         supportedLocales: [Locale('en', 'US'), Locale('ar', 'EG')],
         localizationsDelegates: [
           AppLocalization.delegate,
@@ -43,17 +43,23 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           scaffoldBackgroundColor: AppColor.white,
           textTheme: TextTheme(
-            bodyText1: TextStyle(
-              fontFamily: "Careem",
-              fontSize: 15,
-              color: AppColor.black,
-            ),
-            bodyText2: TextStyle(
+              bodyText1: TextStyle(
                 fontFamily: "Careem",
                 fontSize: 15,
                 color: AppColor.black,
-                decoration: TextDecoration.underline),
-          ),
+              ),
+              bodyText2: TextStyle(
+                  fontFamily: "Careem",
+                  fontSize: 15,
+                  color: AppColor.black,
+                  decoration: TextDecoration.underline),
+              headline1: TextStyle(
+                fontFamily: "Careem",
+                fontWeight: FontWeight.normal,
+                fontSize: 20,
+                color: AppColor.orange.withOpacity(1),
+                letterSpacing: 0,
+              )),
           fontFamily: "Careem",
           appBarTheme: AppBarTheme(
             centerTitle: true,

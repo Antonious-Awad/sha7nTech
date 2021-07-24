@@ -77,6 +77,7 @@ class _addRequestState extends State<addRequest> {
                 height: 3.2.h,
               ),
               tffItem(
+                  context: context,
                   title: AppLocalization.of(context)!
                       .translate("receiver_name")
                       .toString()),
@@ -97,21 +98,17 @@ class _addRequestState extends State<addRequest> {
                         });
                       }),
                   Text(
-                    AppLocalization.of(context)!
-                        .translate("receiver")
-                        .toString(),
-                    style: TextStyle(
-                      fontFamily: "Careem",
-                      fontSize: 15,
-                      color: AppColor.black,
-                    ),
-                  ),
+                      AppLocalization.of(context)!
+                          .translate("receiver")
+                          .toString(),
+                      style: Theme.of(context).textTheme.bodyText1),
                 ],
               ),
               SizedBox(
                 height: 4.67.h,
               ),
               tffItem(
+                  context: context,
                   title: AppLocalization.of(context)!
                       .translate("receiver_phone")
                       .toString(),
@@ -120,6 +117,7 @@ class _addRequestState extends State<addRequest> {
                 height: 0.49.h,
               ),
               tffItem(
+                  context: context,
                   title: AppLocalization.of(context)!
                       .translate("request_cost")
                       .toString(),
@@ -128,9 +126,10 @@ class _addRequestState extends State<addRequest> {
                 height: 3.07.h,
               ),
               //continue button
-              button(buttonText: AppLocalization.of(context)!
-                        .translate("continue")
-                        .toString())
+              button(
+                  buttonText: AppLocalization.of(context)!
+                      .translate("continue")
+                      .toString())
             ],
           ),
         ),

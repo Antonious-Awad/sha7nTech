@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:sha7n_tech/colors.dart';
 import 'package:sizer/sizer.dart';
 
+
+
 Widget tffItem({
   required String title,
   TextInputType? keyboard,
+  required BuildContext context
 }) =>
     Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           "$title",
-          style: tffTitleStyle(),
+          style: Theme.of(context).textTheme.headline1
         ),
         SizedBox(
           height: 1.2.h,
@@ -20,15 +23,6 @@ Widget tffItem({
       ],
     );
 
-TextStyle tffTitleStyle() {
-  return TextStyle(
-    fontFamily: "Careem",
-    fontWeight: FontWeight.normal,
-    fontSize: 20,
-    color: AppColor.orange.withOpacity(1),
-    letterSpacing: 0,
-  );
-}
 
 TextStyle tffInputStyle() {
   return TextStyle(
