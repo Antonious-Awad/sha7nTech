@@ -251,5 +251,7 @@
   "activation_code" : "كود التفعيل",
   "enter_code" : "ادخل كود التفعيل",
   "resend_code" : "إعادة إرسال الكود",
-  "enter_" : "إدخال"
+  "enter_" : "إدخال",
+  "transport_goods": "نقل بضائع",
+  "refrigerator_carts": "عربات ثلاجه"
 }
